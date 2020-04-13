@@ -2,23 +2,19 @@ package ru.job4j.converter;
 
 public class Converter {
     public static int rubleToEuro(int value) {
-        int rsl = value / 70; // формула перевода рублей в евро.
-        return rsl;
+        return value / 70;
     }
 
     public static int rubleToDollar(int value) {
-        int rsl = value / 60; // формула перевода рублей в доллоры.
-        return rsl;
+        return value / 60;
     }
 
     public static int euroToRuble(int value) {
-        int rsl = value * 70; // формула перевода евро в рубли.
-        return rsl;
+        return value * 70;
     }
 
     public static int dollarToRuble(int value) {
-        int rsl = value * 60; // формула перевода доллоров в рубли.
-        return rsl;
+        return value * 60;
     }
 
     public static void main(String[] args) {
@@ -30,5 +26,22 @@ public class Converter {
         System.out.println("43 dollars are " + ruble + " rubles.");
         ruble = Converter.euroToRuble(13);
         System.out.println("13 euro are " + ruble + " rubles.");
+
+        System.out.println("Tests:");
+        int in = 140;
+        int expected = 2;
+        int out = rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2 Euro. Test result : " + passed);
+        in = 180;
+        expected = 3;
+        out = rubleToDollar(in);
+        passed = expected == out;
+        System.out.println("180 rubles are 3$. Test result : " + passed);
+        in = 43;
+        expected = 2555; // подставим ложное ожидание
+        out = dollarToRuble(in);
+        passed = expected == out;
+        System.out.println("43 dollars are 2555 Rub. Test result : " + passed);
     }
 }
