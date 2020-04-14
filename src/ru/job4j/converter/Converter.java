@@ -1,17 +1,50 @@
 package ru.job4j.converter;
 
+/**
+ * Converter класс для конвертирования валюты
+ *
+ * @author Enver Eskendarov
+ * @since 13.04.2020
+ */
 public class Converter {
+    /**
+     * Конвертирование рубля в евро
+     *
+     * @param value входной аргумент
+     * @return результат
+     */
     public static int rubleToEuro(int value) {
         return value / 70;
     }
+
+    /**
+     * Конвертирование рубля доллар
+     *
+     * @param value входной аргумент
+     * @return результат
+     */
 
     public static int rubleToDollar(int value) {
         return value / 60;
     }
 
+    /**
+     * Конвертирование евро в рубли
+     *
+     * @param value входной аргумент
+     * @return результат
+     */
+
     public static int euroToRuble(int value) {
         return value * 70;
     }
+
+    /**
+     * Конвертирование доллар в рубли
+     *
+     * @param value входной аргумент
+     * @return результат
+     */
 
     public static int dollarToRuble(int value) {
         return value * 60;
