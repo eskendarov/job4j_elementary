@@ -14,6 +14,6 @@ public class TriangleTest {
 
     @Test
     public void exist2() {
-        assertThat(Triangle.exist(0, 2.0, 2.0), is(true));
+        assertThat(Triangle.exist(0, 2.0, 2.0), is(false));
     }
 }
