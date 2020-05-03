@@ -37,19 +37,11 @@ public class Point {
     }
 
     public double distance(Point that) {
-        double rsl;
-        if (this.x == 0 && that.x == 0) {
-            rsl = sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2));
-        } else {
-            rsl = sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2) + pow(this.z - that.z, 2));
-        }
-        return rsl;
+        return sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2));
     }
 
-//    public double distance3d(Point that) {
-//        double rsl = sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2) + pow(this.z - that.z, 2));
-//        System.out.println(rsl);
-//        return rsl;
-//
-//    }
+    public double distance3d(Point that) {
+        return sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2) + pow(this.z - that.z, 2));
+
+    }
 }
