@@ -9,16 +9,19 @@ public class MaxTest {
 
     @Test
     public void max1() {
-        assertThat(Max.maxNum(3, 2), is(3));
+        int out = new Max().maxNum(3, 2);
+        assertThat(out, is(3));
     }
 
     @Test
     public void max2() {
-        assertThat(Max.maxNum(2, 5), is(5));
+        int out = new Max().maxNum(3, 2, 9);
+        assertThat(out, is(9));
     }
 
     @Test
     public void max3() {
-        assertThat(Max.maxNum(4, 4), is(4));
+        int out = new Max().maxNum(3, 66, 33, 2);
+        assertThat(out, is(66));
     }
 }
