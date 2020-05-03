@@ -14,8 +14,8 @@ public class TriangleTest {
 
     @Test
     public void area2() {
-        double out = (new Triangle(new Point(2, 4), new Point(2, 4), new Point(0, 3))).area();
+        double out = (new Triangle(new Point(0, 0), new Point(0, 0), new Point(1, 12))).area();
         System.out.println(out);
-        Assert.assertEquals(out, -1, 0.0);
+        Assert.assertEquals(out, -1, 0.1);
     }
 }
