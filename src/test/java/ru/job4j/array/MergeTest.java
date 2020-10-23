@@ -8,6 +8,7 @@ import static org.junit.Assert.assertThat;
 
 @Ignore
 public class MergeTest {
+
     @Test
     public void whenBothEmpty() {
         Merge algo = new Merge();
