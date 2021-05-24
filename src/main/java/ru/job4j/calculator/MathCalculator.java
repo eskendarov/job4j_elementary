@@ -1,6 +1,5 @@
 package ru.job4j.calculator;
 
-import static java.lang.Double.sum;
 import static ru.job4j.math.MathFunction.*;
 
 /**
