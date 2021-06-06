@@ -13,10 +13,11 @@ public class PrintEvenElements {
         System.out.println(
                 "Элементы массива начиная с последнего с четными индексами:"
         );
-        for (int i = numbers.length - 1; i >= 0; i--) {
-            if (i % 2 == 0) {
+        for (int i = 0; i < numbers.length; i++) {
+            int index = numbers.length - i - 1;
+            if (index % 2 == 0) {
                 System.out.printf("%d-й элемент массива: %d%s",
-                        i, numbers[i], System.lineSeparator());
+                        index, numbers[index], System.lineSeparator());
             }
         }
     }
